@@ -1,0 +1,64 @@
+/* Styles globaux */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#root {
+    height: 100%;
+}
+
+/* Conteneur principal */
+.home-container {
+    position: relative; /* Nécessaire pour positionner le bouton de connexion */
+    height: 100vh;
+    background-image: url('../img/bg.jpg'); /* Chemin vers votre image de fond */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+/* Bouton de connexion */
+.login-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.styled-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: #ff5733;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Contenu principal */
+.home-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}

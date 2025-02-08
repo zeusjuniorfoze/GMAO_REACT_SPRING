@@ -1,0 +1,325 @@
+/* Styles de base */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #dfe9f5;
+}
+
+.fw-bolder {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-left: 50%;
+}
+
+/* Navigation */
+.cc-nav {
+    position: fixed;
+    top: 0;
+    background-color: #111244;
+    width: 100%;
+    z-index: 99;
+}
+
+.sidebar {
+    position: fixed;
+    top: 115px;
+    width: 250px;
+    height: 100%;
+    background-color: #111244;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.sidebar li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar li.active a {
+    font-weight: bold;
+    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #007bff;
+}
+
+/* Contenu */
+.content {
+    margin-top: 100px;
+    /* Hauteur de la barre de navigation */
+    padding: 20px;
+    margin-left: 250px;
+    /* Largeur de la sidebar */
+    overflow-y: auto;
+}
+
+/* Pages */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Page d'accueil (Page 1) */
+#page1 {
+    background-color: transparent;
+}
+
+#page1 .bienvenue {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Page des utilisateurs (Page 2) */
+#page2 .add-user-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#page2 .add-user-link:hover {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#page2 .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#page2 .table th,
+#page2 .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#page2 .table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+#page2 .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#page2 .table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+#page2 .search-container {
+    float: right;
+    margin-top: -15px;
+}
+
+#page2 .search-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#page2 .search-container input[type="text"]:focus {
+    outline: none;
+}
+
+/* Page des utilisateurs (Page 3) */
+#page3 .add-user-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#page3 .add-user-link:hover {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#page3 .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#page3 .table th,
+#page3 .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#page3 .table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+#page3 .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#page3 .table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+#page3 .search-container {
+    float: right;
+    margin-top: -15px;
+}
+
+#page3 .search-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#page3 .search-container input[type="text"]:focus {
+    outline: none;
+}
+
+/* Page de profil (Page 4) */
+#page4 .add-user-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#page4 .add-user-link:hover {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#page4 .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#page4 .table th,
+#page4 .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#page4 .table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+#page4 .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#page4 .table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+#page4 .search-container {
+    float: right;
+    margin-top: -15px;
+}
+
+#page4 .search-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#page4 .search-container input[type="text"]:focus {
+    outline: none;
+}
+
+/* Page Paramètres (Page 5) */
+#page5 .setting-item {
+    margin-bottom: 20px;
+}
+
+#page5 .setting-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#page5 .setting-item input[type="text"],
+#page5 .setting-item select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+/* Pages masquées */
+.page {
+    display: none;
+}
+
+/* Page visible */
+.page.active {
+    display: block;
+}

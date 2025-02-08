@@ -1,0 +1,200 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("../img/bg.jpg") no-repeat center center fixed; /* Remplacez l'URL par le chemin vers votre image */
+    background-size: cover;
+    color: #333;
+}
+
+/* Overlay to darken background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Couche sombre sur l'image */
+    z-index: -1;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+    
+}
+
+.nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav_logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 50;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav_logo span {
+    color: #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Auth Page */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    height: 100vh;
+    color: white;
+}
+
+/* Form Container */
+.form_container {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparence pour le formulaire */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.form_container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+/* Input Fields */
+.form_container .form-control {
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid #ddd;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form_container .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form_container .form-select {
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.form_container .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+.form_container .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.form_container .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.form_container .btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* Links */
+.form_container .text-primary {
+    color: #007bff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form_container .text-primary:hover {
+    text-decoration: underline;
+}
+
+/* Validation Messages */
+.validity-message {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.validity-message.text-success {
+    color: #28a745;
+}
+
+.validity-message.text-danger {
+    color: #dc3545;
+}
+
+/* Form Toggle */
+.text-center span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .auth-page {
+        padding: 20px;
+    }
+
+    .form_container {
+        width: 100%;
+    }
+}
