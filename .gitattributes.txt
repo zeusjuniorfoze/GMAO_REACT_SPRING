@@ -1,0 +1,10 @@
+# Forcer CRLF pour les scripts Windows
+*.cmd text eol=crlf
+
+# Forcer LF pour les fichiers de code et config
+*.java text eol=lf
+*.properties text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
