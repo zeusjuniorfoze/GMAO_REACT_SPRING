@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import '../assets/css/AuthPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'boxicons/css/boxicons.min.css';
-import '../assets/css/AuthPage.css';
+
 
 const AuthPage = () => {
     const [showLogin, setShowLogin] = useState(true);
